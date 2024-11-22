@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>book mark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css.css" />
+  </head>
+  <body>
+    <div>
+      <div class="container">
+        <div>
+          <h1 class="text-center">Bookmarker</h1>
+        </div>
+        <div class="bookmarkcap">
+          <div class="row px-2">
+            <div class="col-3"></div>
+            <div class="col-6">
+              <div
+                class="bookmarkform d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-solid fa-bookmark mx-3"></i>
+                <h2>Bookmark your favorite sites</h2>
+                <i class="fa-solid fa-bookmark mx-3"></i>
+              </div>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="bookName" class="pb-2 fw-semibold"
+                  ><i class="fa-solid fa-book-bookmark"></i> Site Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="bookName"
+                  placeholder="Bookmark Name"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="siteName" class="pb-2 fw-semibold"
+                  ><i class="fa-solid fa-link"></i> Site URL</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="siteName"
+                  placeholder="Website URL"
+                />
+              </div>
+            </div>
+            <div class="col-12 text-center mb-3">
+              <button onclick="addbook(),display()" class="btn btn-submit text-center">
+                Submit
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row bg-white my-5 mx-2 text-center " >
+          <div class="item row">
+            <div class="col-3">
+            <h2 class="h4 pt-2">Index</h2>
+          </div>
+          <div class="col-3">
+            <h2 class="h4 pt-2">Website Name</h2>
+          </div>
+          <div class="col-3">
+            <h2 class="h4 pt-2">Visit</h2>
+          </div>
+          <div class="col-3">
+            <h2 class="h4 pt-2">Delete</h2>
+          </div>
+          <hr />
+          
+
+        </div>
+        <div class="row" id="myroow">
+
+        </div>
+      </div>
+    </div>
+
+    <script src="the-logic/bootstrap.bundle.min.js"></script>
+    <script src="the-logic/index.js"></script>
+  </body>
+</html>
